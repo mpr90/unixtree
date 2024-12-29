@@ -748,9 +748,12 @@ LIB_TGT=`echo $LIB_DIR | sed -e 's,.*:,,'`
 #
 # If these were set prior to here, we will just use whatever value was set.
 #
-[ "$DST_DIR" = "" ] && DST_DIR=$SRC_DIR/dist	export DST_DIR
-[ "$UTL_DIR" = "" ] && UTL_DIR=$SRC_DIR/util	export UTL_DIR
-[ "$WIN_DIR" = "" ] && WIN_DIR=$SRC_DIR/ecur	export WIN_DIR
+[ "$DST_DIR" = "" ] && DST_DIR=$SRC_DIR/dist
+export DST_DIR
+[ "$UTL_DIR" = "" ] && UTL_DIR=$SRC_DIR/util
+export UTL_DIR
+[ "$WIN_DIR" = "" ] && WIN_DIR=$SRC_DIR/ecur
+export WIN_DIR
 
 # ------------------------------------------------------------------------
 # get SKU package directory
